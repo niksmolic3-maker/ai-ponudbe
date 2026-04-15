@@ -1,14 +1,12 @@
 {
   "name": "ai-ponudbe",
   "version": "1.0.0",
-  "main": "final-server-mongo.js",
+  "main": "final-server-pdfco.js",
   "scripts": {
-    "start": "node final-server-mongo.js"
+    "start": "node final-server-pdfco.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^8.0.0",
-    "node-fetch": "^3.3.2",
-    "puppeteer": "^22.0.0"
+    "node-fetch": "^2.6.9"
   }
 }
