@@ -4,7 +4,12 @@ const puppeteer = require('puppeteer');
 const app = express();
 app.use(express.json());
 
-// MONGODB POVEZAVA - PRAVILNO GESLO
+// Nastavitev za Render - Chromium pot
+if (process.env.RENDER) {
+    process.env.PUPPETEER_EXECUTABLE_PATH = '/usr/bin/chromium';
+}
+
+// MONGODB POVEZAVA
 const MONGODB_URI = 'mongodb+srv://ai_ponudbe:ponudbe2026@cluster0.lj9uqns.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI)
@@ -46,13 +51,17 @@ async function generatePDF(offerData) {
         <p><strong>Velja do:</strong> ${offerData.validUntil || '30 dni'}</p>
         <p><strong>Kupec:</strong> ${offerData.customerName}</p>
         <table><th>Opis</th><th>Količina</th><th>Cena (€)</th><th>Skupaj (€)</th></tr>
-        ${offerData.items.map(i => `<tr><td>${i.name}</td><td>${i.quantity}</td><td>${i.unitPrice}</td><td>${(i.quantity * i.unitPrice).toFixed(2)}</td></tr>`).join('')}
+        ${offerData.items.map(i => `<tr><td>${i.name}</td><td>${i.quantity}</td><td>${i.unitPrice}</td><td>${(i.quantity * i.unitPrice).toFixed(2)} €</td></tr>`).join('')}
         </table>
-        <div class="total">Skupaj: ${offerData.calculations.total} €</div>
+        <div class="total">Skupaj za plačilo: ${offerData.calculations.total} €</div>
     </body>
     </html>`;
     
-    const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const browser = await puppeteer.launch({ 
+        headless: 'new', 
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || null
+    });
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: 'networkidle0' });
     const pdf = await page.pdf({ format: 'A4', printBackground: true });
@@ -326,16 +335,18 @@ app.get('/dashboard.html', (req, res) => {
                 <div class="table-container">
                     <table>
                         <thead><tr><th>Številka</th><th>Datum</th><th>Podjetje</th><th>Stranka</th><th>Skupaj (€)</th><th>PDF</th></tr></thead>
-                        <tbody id="offersTableBody"><tr><td colspan="6">Nalagam......</td></tr></tbody>
+                        <tbody id="offersTableBody"><tr><td colspan="6">Nalagam...</td></tr></tbody>
                     </table>
                 </div>
             </div>
             <script>
                 let allOffers = [];
                 async function loadOffers() {
-                    const res = await fetch('/api/offers');
-                    const data = await res.json();
-                    if(data.success) { allOffers = data.offers; renderTable(allOffers); updateStats(); }
+                    try {
+                        const res = await fetch('/api/offers');
+                        const data = await res.json();
+                        if(data.success) { allOffers = data.offers; renderTable(allOffers); updateStats(); }
+                    } catch(e) { console.error(e); }
                 }
                 function updateStats() { document.getElementById('totalOffers').innerText = allOffers.length; }
                 function renderTable(offers) {
@@ -347,7 +358,8 @@ app.get('/dashboard.html', (req, res) => {
                             <td>\${offer.date}</td>
                             <td>\${offer.companyName}</td>
                             <td>\${offer.customerName}</td>
-                            <td>\${offer.calculations.total} €</td>    <td><a href="/api/offers/\${offer.id}/pdf" target="_blank" class="btn-pdf">📄 PDF</a></td>
+                            <td>\${offer.calculations.total} €</td>
+                            <td><a href="/api/offers/\${offer.id}/pdf" target="_blank" class="btn-pdf">📄 PDF</a></td>
                         </tr>
                     \`).join('');
                 }
