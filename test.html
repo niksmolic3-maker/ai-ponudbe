@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test AI Ponudbe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Ponudbe - Test</h1>
+        <p>Klikni gumb za ustvarjanje ponudbe:</p>
+        <button onclick="ustvariPonudbo()">📄 Ustvari ponudbo</button>
+        <div id="rezultat"></div>
+    </div>
+
+    <script>
+        async function ustvariPonudbo() {
+            // Pokaži, da pošiljamo
+            document.getElementById('rezultat').innerHTML = '<p>⏳ Pošiljam zahtevek...</p>';
+            
+            // Podatki za ponudbo
+            const podatki = {
+                companyName: "Moje Podjetje d.o.o.",
+                companyTaxId: "SI12345678",
+                customerName: "Janez Novak",
+                customerEmail: "janez@example.com",
+                items: [
+                    {
+                        name: "Spletna stran",
+                        quantity: 1,
+                        unitPrice: 1500
+                    },
+                    {
+                        name: "Vzdrževanje (mesec)",
+                        quantity: 3,
+                        unitPrice: 100
+                    }
+                ]
+            };
+
+            try {
+                // Pošlji zahtevek na strežnik
+                const odgovor = await fetch('http://localhost:3000/api/offers/create', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(podatki)
+                });
+
+                const rezultat = await odgovor.json();
+
+                // Pokaži rezultat
+                if (rezultat.success) {
+                    document.getElementById('rezultat').innerHTML = `
+                        <div class="success">
+                            <h3>✅ USPEH!</h3>
+                            <p><strong>Številka ponudbe:</strong> ${rezultat.offer.id}</p>
+                            <p><strong>Datum:</strong> ${rezultat.offer.date}</p>
+                            <p><strong>Velja do:</strong> ${rezultat.offer.validUntil}</p>
+                            <p><strong>Skupaj brez DDV:</strong> ${rezultat.offer.calculations.subtotal} €</p>
+                            <p><strong>DDV (${rezultat.offer.calculations.taxRate}%):</strong> ${rezultat.offer.calculations.tax} €</p>
+                            <p><strong>SKUPAJ ZA PLAČILO:</strong> ${rezultat.offer.calculations.total} €</p>
+                            <p><strong>PDF shranjen:</strong> ${rezultat.pdfPath}</p>
+                        </div>
+                        <details>
+                            <summary>🔍 Celoten odgovor</summary>
+                            <pre>${JSON.stringify(rezultat, null, 2)}</pre>
+                        </details>
+                    `;
+                } else {
+                    document.getElementById('rezultat').innerHTML = `
+                        <div class="error">
+                            <h3>❌ NAPAKA</h3>
+                            <p>${rezultat.error}</p>
+                        </div>
+                    `;
+                }
+            } catch (napaka) {
+                document.getElementById('rezultat').innerHTML = `
+                    <div class="error">
+                        <h3>❌ NAPAKA PRI POVEZAVI</h3>
+                        <p>${napaka.message}</p>
+                        <p><strong>Preveri:</strong></p>
+                        <ul>
+                            <li>Ali strežnik teče? (v terminalu mora pisati "✅ Server teče na http://localhost:3000")</li>
+                            <li>Ali si zagnal <code>npm start</code>?</li>
+                        </ul>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

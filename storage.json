@@ -1,0 +1,1132 @@
+[
+  {
+    "id": "P-20260414-287",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-181",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-81",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-118",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-316",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-268",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-157",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-131",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-295",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-924",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-939",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-997",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-984",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-382",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-731",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "...",
+    "companyTaxId": "...",
+    "customerName": "...",
+    "customerEmail": "...",
+    "items": [
+      {
+        "name": "...",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "...",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-165",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-30",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-113",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-646",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-349",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-262",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-593",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-443",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-795",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "...",
+    "companyTaxId": "...",
+    "customerName": "...",
+    "customerEmail": "...",
+    "items": [
+      {
+        "name": "...",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "...",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-720",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "...",
+    "companyTaxId": "...",
+    "customerName": "...",
+    "customerEmail": "...",
+    "items": [
+      {
+        "name": "...",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "...",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-47",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "...",
+    "companyTaxId": "...",
+    "customerName": "...",
+    "customerEmail": "...",
+    "items": [
+      {
+        "name": "...",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "...",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-769",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-789",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-350",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-696",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-941",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-888",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-234",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-985",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-63",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-631",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 150
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "450.00",
+      "tax": "99.00",
+      "taxRate": 22,
+      "total": "549.00"
+    }
+  },
+  {
+    "id": "P-20260414-640",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 150
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "450.00",
+      "tax": "99.00",
+      "taxRate": 22,
+      "total": "549.00"
+    }
+  },
+  {
+    "id": "P-20260414-533",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-20260414-540",
+    "date": "2026-04-14",
+    "validUntil": "2026-05-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "taxRate": 22,
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-1776201541368",
+    "date": "2026-04-14",
+    "companyName": "Moje Podjetje d.o.o.",
+    "companyTaxId": "SI12345678",
+    "customerName": "Janez Novak",
+    "customerEmail": "janez@example.com",
+    "items": [
+      {
+        "name": "Spletna stran",
+        "quantity": 1,
+        "unitPrice": 1500
+      },
+      {
+        "name": "Vzdrževanje (mesec)",
+        "quantity": 3,
+        "unitPrice": 100
+      }
+    ],
+    "calculations": {
+      "subtotal": "1800.00",
+      "tax": "396.00",
+      "total": "2196.00"
+    }
+  },
+  {
+    "id": "P-1776233811477",
+    "date": "2026-04-15",
+    "validUntil": "2026-04-15",
+    "companyName": "marjan d.o.o.",
+    "companyTaxId": "Sl23094039",
+    "customerName": "Robert Marjan",
+    "customerEmail": "robertmarjan@gmail.com",
+    "items": [
+      {
+        "name": "menjava olja",
+        "quantity": 1,
+        "unitPrice": 127.86
+      },
+      {
+        "name": "menjava oljnega filtra",
+        "quantity": 1,
+        "unitPrice": 56.75
+      },
+      {
+        "name": "delo mehanik",
+        "quantity": 1,
+        "unitPrice": 120
+      }
+    ],
+    "calculations": {
+      "subtotal": "304.61",
+      "tax": "67.01",
+      "total": "371.62"
+    }
+  },
+  {
+    "id": "P-1776234158197",
+    "date": "2026-04-15",
+    "validUntil": "2026-05-15",
+    "companyName": "marjan sp",
+    "companyTaxId": "Sl39202939",
+    "customerName": "Viktor",
+    "customerEmail": "viktorjanez@gmail.com",
+    "items": [
+      {
+        "name": "menjava olja",
+        "quantity": 1,
+        "unitPrice": 56.77
+      }
+    ],
+    "calculations": {
+      "subtotal": "56.77",
+      "tax": "12.49",
+      "total": "69.26"
+    }
+  }
+]

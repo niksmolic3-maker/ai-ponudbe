@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AI Ponudbe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fb;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .stat-card {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        /* Kontrolna vrstica */
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .search-box {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: #4CAF50;
+        }
+        
+        .btn-primary:hover {
+            background: #45a049;
+        }
+        
+        /* Tabela */
+        .table-container {
+            background: white;
+            border-radius: 12px;
+            overflow-x: auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #555;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .offer-id {
+            font-family: monospace;
+            font-size: 12px;
+            color: #667eea;
+        }
+        
+        .total {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .btn-pdf {
+            background: #ff9800;
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+        
+        .btn-pdf:hover {
+            background: #fb8c00;
+        }
+        
+        .btn-delete {
+            background: #f44336;
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+        
+        .btn-delete:hover {
+            background: #e53935;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 50px;
+            color: #999;
+        }
+        
+        .refresh-btn {
+            background: #2196F3;
+        }
+        
+        /* Modal za brisanje */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .stats { display: none; }
+            .controls { flex-direction: column; }
+            th, td { font-size: 12px; padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>📊 AI Ponudbe - Dashboard</h1>
+                <p>Pregled in upravljanje vseh ponudb</p>
+            </div>
+            <div class="stats" id="stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalOffers">0</div>
+                    <div class="stat-label">Število ponudb</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalValue">0</div>
+                    <div class="stat-label">Skupna vrednost (€)</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kontrole -->
+        <div class="controls">
+            <input type="text" class="search-box" id="searchInput" placeholder="🔍 Išči po številki ponudbe, stranki, podjetju...">
+            <button class="refresh-btn" onclick="loadOffers()">🔄 Osveži</button>
+            <button class="btn-primary" onclick="window.location.href='/'">➕ Nova ponudba</button>
+        </div>
+        
+        <!-- Tabela ponudb -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Številka</th>
+                        <th>Datum</th>
+                        <th>Podjetje</th>
+                        <th>Stranka</th>
+                        <th>Email</th>
+                        <th>Skupaj (€)</th>
+                        <th>Akcije</th>
+                    </tr>
+                </thead>
+                <tbody id="offersTableBody">
+                    <tr class="no-data">
+                        <td colspan="7">Nalagam ponudbe...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Modal za brisanje -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h3>🗑️ Potrdi brisanje</h3>
+            <p>Ali res želiš izbrisati to ponudbo?</p>
+            <p><strong id="deleteOfferId"></strong></p>
+            <div class="modal-buttons">
+                <button class="btn-delete" onclick="confirmDelete()">Da, izbriši</button>
+                <button onclick="closeModal()">Prekliči</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allOffers = [];
+        let offerToDelete = null;
+        
+        // Naloži ponudbe ob zagonu
+        loadOffers();
+        
+        // Iskanje v realnem času
+        document.getElementById('searchInput').addEventListener('input', function() {
+            filterOffers();
+        });
+        
+        async function loadOffers() {
+            try {
+                const response = await fetch('/api/offers');
+                const data = await response.json();
+                
+                if (data.success) {
+                    allOffers = data.offers.reverse(); // Najnovejše na vrhu
+                    updateStats();
+                    filterOffers();
+                } else {
+                    document.getElementById('offersTableBody').innerHTML = '<tr class="no-data"><td colspan="7">Napaka pri nalaganju podatkov</td></tr>';
+                }
+            } catch (error) {
+                console.error('Napaka:', error);
+                document.getElementById('offersTableBody').innerHTML = '<tr class="no-data"><td colspan="7">Napaka pri povezavi s strežnikom</td></tr>';
+            }
+        }
+        
+        function updateStats() {
+            document.getElementById('totalOffers').innerText = allOffers.length;
+            
+            const totalValue = allOffers.reduce((sum, offer) => {
+                return sum + parseFloat(offer.calculations.total);
+            }, 0);
+            document.getElementById('totalValue').innerText = totalValue.toFixed(2);
+        }
+        
+        function filterOffers() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            
+            const filtered = allOffers.filter(offer => {
+                return offer.id.toLowerCase().includes(searchTerm) ||
+                       offer.companyName.toLowerCase().includes(searchTerm) ||
+                       offer.customerName.toLowerCase().includes(searchTerm) ||
+                       (offer.customerEmail && offer.customerEmail.toLowerCase().includes(searchTerm));
+            });
+            
+            renderTable(filtered);
+        }
+        
+        function renderTable(offers) {
+            const tbody = document.getElementById('offersTableBody');
+            
+            if (offers.length === 0) {
+                tbody.innerHTML = '<tr class="no-data"><td colspan="7">Ni najdenih ponudb</td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = offers.map(offer => `
+                <tr>
+                    <td class="offer-id">${offer.id}</td>
+                    <td>${offer.date}</td>
+                    <td><strong>${escapeHtml(offer.companyName)}</strong></td>
+                    <td>${escapeHtml(offer.customerName)}</td>
+                    <td>${offer.customerEmail || '-'}</td>
+                    <td class="total">${offer.calculations.total} €</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-pdf" onclick="downloadPDF('${offer.id}')">📄 PDF</button>
+                            <button class="btn-delete" onclick="showDeleteModal('${offer.id}')">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        function downloadPDF(offerId) {
+            // Poskusi najti PDF v output mapi
+            window.open(`/output/ponudba_${offerId}.pdf`, '_blank');
+        }
+        
+        function showDeleteModal(offerId) {
+            offerToDelete = offerId;
+            document.getElementById('deleteOfferId').innerText = offerId;
+            document.getElementById('deleteModal').style.display = 'flex';
+        }
+        
+        async function confirmDelete() {
+            if (!offerToDelete) return;
+            
+            try {
+                const response = await fetch(`/api/offers/${offerToDelete}`, {
+                    method: 'DELETE'
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    closeModal();
+                    loadOffers();
+                } else {
+                    alert('Napaka pri brisanju: ' + result.error);
+                }
+            } catch (error) {
+                alert('Napaka pri brisanju');
+            }
+        }
+        
+        function closeModal() {
+            document.getElementById('deleteModal').style.display = 'none';
+            offerToDelete = null;
+        }
+        
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+        
+        // Osveži vsakih 30 sekund
+        setInterval(loadOffers, 30000);
+    </script>
+</body>
+</html>
