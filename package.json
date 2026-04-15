@@ -1,7 +1,6 @@
 {
   "name": "ai-ponudbe",
   "version": "1.0.0",
-  "description": "AI Ponudbe sistem",
   "main": "final-server-mongo.js",
   "scripts": {
     "start": "node final-server-mongo.js"
