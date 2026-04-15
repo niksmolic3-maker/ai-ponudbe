@@ -182,7 +182,7 @@ app.post('/api/offers/create', async (req, res) => {
             message: "Ponudba uspešno ustvarjena!",
             offer: offerData,
             pdfPath: pdfPath,
-            downloadUrl: pdfPath ? `/output/ponudba_${offerData.id}.pdf` : null
+            downloadUrl: `/output/ponudba_${offerData.id}.pdf`
         });
         
     } catch (error) {
