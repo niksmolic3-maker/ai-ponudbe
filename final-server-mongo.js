@@ -4,8 +4,8 @@ const puppeteer = require('puppeteer');
 const app = express();
 app.use(express.json());
 
-// MONGODB POVEZAVA
-const MONGODB_URI = 'mongodb+srv://ai_ponudbe:db_password@cluster0.lj9uqns.mongodb.net/?retryWrites=true&w=majority';
+// MONGODB POVEZAVA - PRAVILNO GESLO
+const MONGODB_URI = 'mongodb+srv://ai_ponudbe:ponudbe2026@cluster0.lj9uqns.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI)
     .then(() => console.log('✅ Povezan na MongoDB'))
@@ -134,7 +134,7 @@ app.get('/', (req, res) => {
                 h1 { color: #667eea; margin-bottom: 10px; text-align: center; }
                 .subtitle { color: #666; margin-bottom: 30px; text-align: center; }
                 label { font-weight: bold; display: block; margin-top: 15px; margin-bottom: 5px; color: #333; }
-                input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+                input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
                 .item-row { display: flex; gap: 10px; margin-bottom: 10px; }
                 .item-row input { flex: 1; margin: 0; }
                 button { background: #667eea; color: white; padding: 14px 28px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-top: 20px; }
@@ -326,7 +326,7 @@ app.get('/dashboard.html', (req, res) => {
                 <div class="table-container">
                     <table>
                         <thead><tr><th>Številka</th><th>Datum</th><th>Podjetje</th><th>Stranka</th><th>Skupaj (€)</th><th>PDF</th></tr></thead>
-                        <tbody id="offersTableBody"><tr><td colspan="6">Nalagam...</td></tr></tbody>
+                        <tbody id="offersTableBody"><tr><td colspan="6">Nalagam......</td></tr></tbody>
                     </table>
                 </div>
             </div>
@@ -347,8 +347,7 @@ app.get('/dashboard.html', (req, res) => {
                             <td>\${offer.date}</td>
                             <td>\${offer.companyName}</td>
                             <td>\${offer.customerName}</td>
-                            <td>\${offer.calculations.total} €</td>
-                            <td><a href="/api/offers/\${offer.id}/pdf" target="_blank" class="btn-pdf">📄 PDF</a></td>
+                            <td>\${offer.calculations.total} €</td>    <td><a href="/api/offers/\${offer.id}/pdf" target="_blank" class="btn-pdf">📄 PDF</a></td>
                         </tr>
                     \`).join('');
                 }
